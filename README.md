@@ -6,17 +6,17 @@ This module is being developed as a part of **Cryptography with elements of alge
 
 ### Module 1
 Module 1 includes basic algorithms:
-* [addBinary]('./src/module-1/basic/addBinary.js'): school addition algorithm,
-* [divideBinary]('./src/module-1/basic/divideBinary.js'): school multiplication algorithm,
-* [multiplyBinary]('./src/module-1/basic/multiplyBinary.js'): division with remainder algorithm,
+* [addBinary](/src/module-1/basic/addBinary.js): school addition algorithm,
+* [divideBinary](/src/module-1/basic/divideBinary.js): school multiplication algorithm,
+* [multiplyBinary](/src/module-1/basic/multiplyBinary.js): division with remainder algorithm,
 
 and advanced algorithms:
 
-* [findInverse]('./src/module-1/advanced/findInverse.js'): finding an inverse modulo n,
-* [fastPower]('./src/module-1/advanced/fastPower.js'): fast power algorithm,
-* [isSquare]('./src/module-1/advanced/isSquare.js'): algorithm which checks whether an element is a square modulo p,
-* [squarePrime]('./src/module-1/advanced/squarePrime.js'): algorithm which finds a square root of a square modulo p,
-* [fermat]('./src/module-1/advanced/fermat.js'): algorithm which checks the primality using Fermat's test.
+* [findInverse](/src/module-1/advanced/findInverse.js): finding an inverse modulo n,
+* [fastPower](/src/module-1/advanced/fastPower.js): fast power algorithm,
+* [isSquare](/src/module-1/advanced/isSquare.js): algorithm which checks whether an element is a square modulo p,
+* [squarePrime](/src/module-1/advanced/squarePrime.js): algorithm which finds a square root of a square modulo p,
+* [fermat](/src/module-1/advanced/fermat.js): algorithm which checks the primality using Fermat's test.
 
 ## Project setup
 
