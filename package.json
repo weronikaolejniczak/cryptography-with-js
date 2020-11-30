@@ -4,7 +4,8 @@
   "description": "Cryptography with elements of algebra in JavaScript",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "jest"
   },
   "author": "Weronika Olejniczak",
   "license": "ISC",
