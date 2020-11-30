@@ -13,7 +13,9 @@
  */
 
 function addBinary(a, b) {
-    console.log('School addition algorithm');
+    sum = a + b;
+
+    return sum;
 }
 
 module.exports = addBinary;
