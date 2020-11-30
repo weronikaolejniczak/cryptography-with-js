@@ -13,9 +13,9 @@
  */
 
 function addBinary(a, b) {
-    sum = a + b;
+    c = [0];
 
-    return sum;
+    return c;
 }
 
 module.exports = addBinary;
