@@ -1,5 +1,5 @@
 /**
- * (-1). Division with remainder algorithm (missing: -2 pts, implementation up to 0 pts)
+ * Division with remainder algorithm
  *
  * Input: two binary sequences representing non-negative integers a, b
  *  a = (ak − 1, …, a0)2,

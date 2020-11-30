@@ -1,5 +1,5 @@
 /**
- * Finding an inverse modulo n (missing: 0 pts, implementation up to 3 pts)
+ * Finding an inverse modulo n
  *
  * Input: natural number n > 1, natural number 0 ≤ a < n
  *

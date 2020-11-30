@@ -1,5 +1,5 @@
 /**
- * Algorithm which checks whether an element is a square modulo p (missing: 0 pts, implementation up to 3 pkt)
+ * Algorithm which checks whether an element is a square modulo p
  *
  * Input: prime number p, natural number 0 < m < p
  *

@@ -1,5 +1,5 @@
 /**
- * Algorithm which checks the primality using Fermat's test (missing: 0 pts, implementation up to 5 pts)
+ * Algorithm which checks the primality using Fermat's test
  *
  * Input: natural number 1 < n, natural number N
  *

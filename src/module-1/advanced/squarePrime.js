@@ -1,5 +1,5 @@
 /**
- * Algorithm which finds a square root of a square modulo p (missing: 0 pts, implementation up to 5 pts)
+ * Algorithm which finds a square root of a square modulo p
  *
  * Input: prime number p congruent to 3 modulo 4, natural number 1 < m < p
  *

@@ -1,5 +1,5 @@
 /**
- * Fast power algorithm (missing: 0 pts, implementation up to 3 pts)
+ * Fast power algorithm
  *
  * Input: natural number n > 1, natural number k ≥ 1, natural number 2 ≤ b < n.
  *

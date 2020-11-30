@@ -1,5 +1,5 @@
 /**
- * (-2). School multiplication algorithm (missing: -2 pts, implementation up to 0 pts)
+ * School multiplication algorithm
  *
  * Input: two binary sequences representing non-negative integers a, b
  *  a = (ak − 1, …, a0)2,

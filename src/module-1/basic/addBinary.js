@@ -1,5 +1,5 @@
 /**
- * (-3). School addition algorithm (missing: -2 pkt, implementation up to 0 pts)
+ * School addition algorithm
  *
  * Input: two binary sequences representing non-negative integers a, b
  *  a = (ak − 1, …, a0)2,
