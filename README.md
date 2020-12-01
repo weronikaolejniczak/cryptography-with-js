@@ -7,8 +7,8 @@ This module is being developed as a part of **Cryptography with elements of alge
 ### Module 1
 Module 1 includes basic algorithms:
 * [addBinary](/src/module-1/basic/addBinary.js): school addition algorithm,
-* [divideBinary](/src/module-1/basic/divideBinary.js): school multiplication algorithm,
 * [multiplyBinary](/src/module-1/basic/multiplyBinary.js): division with remainder algorithm,
+* [divideBinary](/src/module-1/basic/divideBinary.js): school multiplication algorithm,
 
 and advanced algorithms:
 
