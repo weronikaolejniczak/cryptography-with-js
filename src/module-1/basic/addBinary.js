@@ -17,11 +17,13 @@ function addBinary(a, b) {
     let carry = 0;
     let tmp = 0;
 
-    a.reverse();
-    b.reverse();
+    const A = a;
+    A.reverse();
+    const B = b;
+    B.reverse();
 
-    for (let i = 0; i < Math.min(a.length, b.length); i++) {
-        if (a[i] == 0 && b[i] == 0) {
+    for (let i = 0; i < Math.min(A.length, B.length); i++) {
+        if (A[i] == 0 && B[i] == 0) {
             if (carry == 0) {
                 tmp = 0;
             } else {
@@ -29,7 +31,7 @@ function addBinary(a, b) {
             }
 
             carry = 0;
-        } else if (a[i] == 1 && b[i] == 1) {
+        } else if (A[i] == 1 && B[i] == 1) {
             if (carry == 0) {
                 tmp = 0;
             } else {
@@ -50,28 +52,28 @@ function addBinary(a, b) {
         c.push(tmp);
     }
 
-    if (a.length > b.length) {
-        for (let i = b.length; i < a.length; i++) {
-            if (a[i] == 0 && carry == 1) {
+    if (A.length > B.length) {
+        for (let i = B.length; i < A.length; i++) {
+            if (A[i] == 0 && carry == 1) {
                 c.push(1);
                 carry = 0;
-            } else if (a[i] == 1 && carry == 1) {
+            } else if (A[i] == 1 && carry == 1) {
                 c.push(0);
                 carry = 1;
             } else {
-                c.push(a[i]);
+                c.push(A[i]);
             }
         }
-    } else if (a.length < b.length) {
-        for (let i = a.length; i < b.length; i++) {
-            if (b[i] == 0 && carry == 1) {
+    } else if (A.length < B.length) {
+        for (let i = A.length; i < B.length; i++) {
+            if (B[i] == 0 && carry == 1) {
                 c.push(1);
                 carry = 0;
-            } else if (b[i] == 1 && carry == 1) {
+            } else if (B[i] == 1 && carry == 1) {
                 c.push(0);
                 carry = 1;
             } else {
-                c.push(b[i]);
+                c.push(B[i]);
             }
         }
     }
