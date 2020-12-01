@@ -1,6 +1,6 @@
 const moduleOne = require('./src/module-1');
 
-moduleOne.addBinary([1, 0, 0, 1], [1, 1, 1, 0]);
+moduleOne.addBinary([1, 0, 0, 1, 0, 0, 1], [1, 0, 1, 0]);
 //moduleOne.multiplyBinary();
 //moduleOne.divideBinary();
 
