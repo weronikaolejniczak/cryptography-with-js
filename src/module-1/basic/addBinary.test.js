@@ -1,16 +1,22 @@
 const utilities = require('../utilities');
 const addBinary = require('./addBinary');
 
-for (let i = 0; i < 20; i++) {
-    a = Math.floor(Math.random() * 100);
-    b = Math.floor(Math.random() * 100);
+const NUM_OF_TESTS = 20;
 
-    binaryArrayA = utilities.convertToBinary(a);
-    binaryArrayB = utilities.convertToBinary(b);
-    binaryArraySum = utilities.convertToBinary(a + b);
+for (let i = 0; i < NUM_OF_TESTS; i++) {
+    let a = Math.floor(Math.random() * 100);
+    let b = Math.floor(Math.random() * 100);
+
+    let binaryArrayA = utilities.convertToBinary(a);
+    let binaryArrayB = utilities.convertToBinary(b);
+    let binaryArraySum = utilities.convertToBinary(a + b);
 
     test(
-      `[${binaryArrayA.toString()}] + [${binaryArrayB.toString()}] = [${binaryArraySum.toString()}]`, () => {
-      expect(addBinary(binaryArrayA, binaryArrayB).toString()).toBe(binaryArraySum.toString());
+      `expect [${binaryArrayA}] + [${binaryArrayB}] to be [${binaryArraySum}]`,
+      () => {
+        let sum = addBinary(binaryArrayA, binaryArrayB).toString();
+        let expected = binaryArraySum.toString();
+
+        expect(sum).toBe(expected);
     });
 }
