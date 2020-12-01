@@ -11,9 +11,43 @@
  *
  * Output: binary sequence c which represents the sum c = a ⋅ b.
  */
+const addBinary = require('./addBinary');
 
 function multiplyBinary(a, b) {
-    console.log('School multiplication algorithm');
+    c = [];
+
+    const A = a;
+    A.reverse();
+    const B = b;
+    B.reverse();
+
+    for (let l = 0; l < B.length; l++) {
+        let result = [];
+
+        for (let k = 0; k < l; k++) {
+            result.push(0);
+        }
+
+        for (let k = 0; k < A.length; k++) {
+            result.push(B[l] * A[k]);
+        }
+
+        let tmp = result;
+        tmp.reverse();
+
+        if (c === []) {
+            c = result;
+            c.reverse();
+        } else {
+            c = addBinary(c, result);
+        }
+    }
+
+    if (!c.find(elem => elem == 1)) {
+        return [0]
+    }
+
+    return c;
 }
 
 module.exports = multiplyBinary;
