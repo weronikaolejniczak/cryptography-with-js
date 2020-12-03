@@ -12,11 +12,11 @@ for (let i = 0; i < NUM_OF_TESTS; i++) {
     let binaryArrayProduct = utilities.convertToBinary(a * b);
 
     test(
-      `expect [${binaryArrayA.toString()}] + [${binaryArrayB.toString()}] to be [${binaryArrayProduct.toString()}]`,
+      `expect [${binaryArrayA.toString()}] * [${binaryArrayB.toString()}] to be [${binaryArrayProduct.toString()}]`,
       () => {
-        let product = multiplyBinary(binaryArrayA, binaryArrayB).toString();
+        let result = multiplyBinary(binaryArrayA, binaryArrayB).toString();
         let expected = binaryArrayProduct.toString();
 
-        expect(product).toBe(expected);
+        expect(result).toBe(expected);
     });
 }
