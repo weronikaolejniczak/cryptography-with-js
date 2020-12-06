@@ -7,7 +7,7 @@
  *  'yes' if m is a square modulo p,
  *  'no' if m is not a square modulo p
  *
- * Hint: use Euler theorem to check that.
+ * Hint: uses Euler theorem to check that.
  */
 const utilities = require('../utilities');
 
