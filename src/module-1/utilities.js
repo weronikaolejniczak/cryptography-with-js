@@ -6,7 +6,21 @@ function convertToDecimal(binary) {
     return parseInt(binary, 2);
 }
 
+function GCD(x, y) {
+    x = Math.abs(x);
+    y = Math.abs(y);
+
+    while (y) {
+        let t = y;
+        y = x % y;
+        x = t;
+    }
+
+  return x;
+}
+
 module.exports = {
     convertToBinary,
-    convertToDecimal
+    convertToDecimal,
+    GCD
 }
