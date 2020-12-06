@@ -13,8 +13,6 @@ function fastPower(b, k, n) {
     let power = utilities.convertToDecimal(k.join(''));
     let mod = utilities.convertToDecimal(n.join(''));
 
-    base = base % mod;
-
     if (base == 0) return 0;
 
     while (power > 0) {
@@ -22,8 +20,8 @@ function fastPower(b, k, n) {
             result = (result * base) % mod;
         }
         
-        power = power >> 1;
         base = (base * base) % mod;
+        power >>= 1;
     }
 
     result = utilities.convertToBinary(result);

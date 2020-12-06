@@ -12,17 +12,14 @@ for (let i = 0; i < NUM_OF_TESTS; i++) {
     let binaryArrayK = utilities.convertToBinary(k);
     let binaryArrayN = utilities.convertToBinary(n);
 
-    console.log('b: ', b, 'to the power of k: ', k, ' is ', Math.pow(b, k));
     let result = Math.pow(b, k) % n;
     result = utilities.convertToBinary(result);
-    console.log(i, ' Result: ', result);
 
     test(
       `expect [${binaryArrayB.toString()}] ^ [${binaryArrayK.toString()}]
       % [${binaryArrayN.toString()}] to be [${result.toString()}]`,
       () => {
         let fastPowerResult = fastPower(binaryArrayB, binaryArrayK, binaryArrayN).toString();
-        console.log(i, ' fastPowerResult: ', fastPowerResult);
 
         expect(fastPowerResult).toBe(result.toString());
     });
