@@ -6,6 +6,14 @@ function convertToDecimal(binary) {
     return parseInt(binary, 2);
 }
 
+function prepareData(x) {
+    if (Array.isArray(x)) {
+        return convertToDecimal(x.join(''));
+    }
+
+    return x;
+}
+
 function GCD(x, y) {
     x = Math.abs(x);
     y = Math.abs(y);
@@ -22,5 +30,6 @@ function GCD(x, y) {
 module.exports = {
     convertToBinary,
     convertToDecimal,
+    prepareData,
     GCD
 }
