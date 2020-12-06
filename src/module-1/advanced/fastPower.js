@@ -9,19 +9,18 @@ const utilities = require('../utilities');
 
 function fastPower(b, k, n) {
     let result = 1;
-    let base = utilities.convertToDecimal(b.join(''));
-    let power = utilities.convertToDecimal(k.join(''));
-    let mod = utilities.convertToDecimal(n.join(''));
-
-    if (base == 0) return 0;
+    let base = utilities.prepareData(b);
+    let power = utilities.prepareData(k);
+    let mod = utilities.prepareData(n);
 
     while (power > 0) {
         if (power & 1) {
             result = (result * base) % mod;
+            power = power - 1;
         }
         
+        power = power / 2;
         base = (base * base) % mod;
-        power >>= 1;
     }
 
     result = utilities.convertToBinary(result);
